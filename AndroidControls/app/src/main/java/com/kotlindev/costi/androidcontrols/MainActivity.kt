@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         btnToCheckBox.setOnClickListener { OpenCheckBoxActivity() }
         btnToRadioGroup.setOnClickListener { OpenRadioGrouActivity() }
         btnToSeekBar.setOnClickListener { OpenSeekBarActivity() }
+        btnToSwitch.setOnClickListener { OpenSwitchActivity() }
     }
 
     fun OpenTextActivity(){
@@ -32,5 +33,9 @@ class MainActivity : AppCompatActivity() {
 
     fun OpenSeekBarActivity(){
         startActivity(Intent(this, SeekBarActivity::class.java))
+    }
+
+    fun OpenSwitchActivity(){
+        startActivity(Intent(this, SwitchButtonActivity::class.java))
     }
 }
