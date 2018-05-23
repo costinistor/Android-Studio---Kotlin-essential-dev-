@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         btnToSeekBar.setOnClickListener { OpenSeekBarActivity() }
         btnToSwitch.setOnClickListener { OpenSwitchActivity() }
         btnToToggle.setOnClickListener { OpenToggleActivity() }
+        btnToSpinnerSimple.setOnClickListener { OpenSpinnerSimpleActivity() }
     }
 
     fun OpenTextActivity(){
@@ -42,5 +43,9 @@ class MainActivity : AppCompatActivity() {
 
     fun OpenToggleActivity(){
         startActivity(Intent(this, ToggleButtonActivity::class.java))
+    }
+
+    fun OpenSpinnerSimpleActivity(){
+        startActivity(Intent(this, SpinnerSimpleActivity::class.java))
     }
 }

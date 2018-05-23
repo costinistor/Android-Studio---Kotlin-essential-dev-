@@ -21,7 +21,8 @@
         <activity android:name=".RadioGroupActivity" />
         <activity android:name=".SeekBarActivity" />
         <activity android:name=".SwitchButtonActivity" />
-        <activity android:name=".ToggleButtonActivity"></activity>
+        <activity android:name=".ToggleButtonActivity" />
+        <activity android:name=".SpinnerSimpleActivity"></activity>
     </application>
 
 </manifest>
