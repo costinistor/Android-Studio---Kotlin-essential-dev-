@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity(), dialogCustom.OnInputSelected {
     }
 
     fun openCustomDialog(){
-        val transaction = fragmentManager.beginTransaction()
+        val transaction = supportFragmentManager.beginTransaction()
         val dialog = dialogCustom()
         dialog.show(transaction, "dialog")
     }
